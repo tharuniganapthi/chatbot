@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Home Page</title>
+    <!-- Include Tailwind CSS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;1,300;1,400&family=Hind+Madurai:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* font-family: 'Poppins', sans-serif; */
+            background-image: url(bg.jpg);
+            font-size: 40px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: right;
+            
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-left: 20px; /* Adjusted padding */
+            margin-top: 70px;
+        }
+
+        .navbar {
+            background-color: rgba(34, 53, 68, 0.7); /* Translucent background */ 
+            color: #101010;
+            height: 100px;
+            text-size-adjust: 60px;
+            display: flex;
+            justify-content: space-between; /* Align items to the ends */
+            align-items: center; /* Center items vertically */
+            padding: 0 20px; /* Add padding for better spacing */
+        }
+
+        .navbar a {
+            color: #ffffff;
+            transition: color 0.3s;
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        .navbar a:hover {
+            color: #9ca3af;
+        }
+
+        .option-button {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: rgba(144, 175, 170, 0.5); /* Translucent background for buttons */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #111111;
+            font-size: 1.5rem; /* Adjusted font size */
+            line-height: 1.2; /* Adjusted line height */
+            text-align: center; /* Center text horizontally */
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .option-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-xl {
+            text-align: center;
+            font-size: 65px;
+            margin-top: 19px;
+            margin-left: 580px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar py-4">
+        <div class="text-xl">SADHANA</div>
+        <div>
+            <a href="login1.html" class="hover" style="font-size: medium; margin-right: 20px;">Logout</a>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 py-8 flex justify-center items-center h-screen">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12"> <!-- Increased gap between buttons -->
+            <div class="option-button flex justify-center items-center" onclick="window.location.href='http://172.24.106.252:8501'">
+                Mock Interviews
+            </div>
+            <div class="option-button flex justify-center items-center" onclick="window.location.href='live_recruitments.html'">
+                Live Recruitments
+            </div>
+            <div class="option-button flex justify-center items-center" onclick="window.location.href='viva_preparation.html'">
+                Viva Preparation
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional: Include a Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+</body>
+
+</html>
